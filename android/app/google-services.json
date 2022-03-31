@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9224372430",
+    "project_id": "sem-iii-file-converter",
+    "storage_bucket": "sem-iii-file-converter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9224372430:android:dcb49c6b6e8f45a9f6109f",
+        "android_client_info": {
+          "package_name": "com.example.file_converter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9224372430-3cq3fk1nkjp3d1nb790vmf8dab4pr592.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.file_converter",
+            "certificate_hash": "99de919b8d314baa6fb3b9b686c88808e06e7ee9"
+          }
+        },
+        {
+          "client_id": "9224372430-rbp48k8kt79ange5b34biu5f108vlbuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZxcvuiKZsaa5eQBYfgBtZu5yQlV1vWz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9224372430-rbp48k8kt79ange5b34biu5f108vlbuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
