@@ -1,11 +1,13 @@
-class ListFile {
-  String? fileName;
-  String? filePath;
-  double? fileSize;
+import 'package:firebase_storage/firebase_storage.dart';
 
-  ListFile(String? name, String? path, double? size) {
-    fileName = name;
-    filePath = path;
-    fileSize = size;
-  }
+class FirebaseFile {
+  final Reference ref;
+  final String name;
+  final String url;
+
+  const FirebaseFile({
+    required this.ref,
+    required this.name,
+    required this.url,
+  });
 }

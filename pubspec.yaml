@@ -51,6 +51,8 @@ dependencies:
   external_path: ^1.0.1
   share_plus: ^3.1.0
   firebase_storage: ^10.2.9
+  http: ^0.13.4
+  advance_pdf_viewer: ^2.0.1
 
 dev_dependencies:
   flutter_test:

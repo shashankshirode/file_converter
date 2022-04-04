@@ -140,23 +140,13 @@ class _HistoryPageState extends State<HistoryPage> {
                             0xe342,
                             fontFamily: 'MaterialIcons',
                           )),
+                          onTap: () {
+                            OpenFile.open(_folders[index].path);
+                          },
                           trailing: PopupMenuButton<int>(
                             icon: const Icon(Icons.more_vert),
                             color: Colors.white,
                             itemBuilder: (context) => [
-                              PopupMenuItem<int>(
-                                value: 1,
-                                child: InkWell(
-                                  child: Row(children: const [
-                                    Icon(Icons.open_in_new),
-                                    SizedBox(width: 10),
-                                    Text("Open"),
-                                  ]),
-                                  onTap: () {
-                                    OpenFile.open(_folders[index].path);
-                                  },
-                                ),
-                              ),
                               PopupMenuItem<int>(
                                 value: 2,
                                 child: InkWell(

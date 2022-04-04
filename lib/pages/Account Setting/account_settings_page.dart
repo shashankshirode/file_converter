@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison
+
 import 'package:file_converter/utils/colors.dart';
 import 'package:file_converter/utils/routes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -14,6 +16,8 @@ class AccountSettingsPage extends StatefulWidget {
 class _AccountSettingsPageState extends State<AccountSettingsPage> {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   User? user;
+  String? userName;
+  String? userEmail;
 
   @override
   void initState() {
@@ -23,6 +27,8 @@ class _AccountSettingsPageState extends State<AccountSettingsPage> {
 
   initUser() async {
     user = _firebaseAuth.currentUser!;
+    userName = user!.displayName;
+    userEmail = user!.email;
     setState(() {});
   }
 
@@ -186,7 +192,7 @@ class _AccountSettingsPageState extends State<AccountSettingsPage> {
                       height: 10,
                     ),
                     Text(
-                      "Shashank Shirode",
+                      userName!,
                       style: Theme.of(context)
                           .textTheme
                           .headline6!
@@ -196,7 +202,7 @@ class _AccountSettingsPageState extends State<AccountSettingsPage> {
                       height: 2,
                     ),
                     Text(
-                      "shashankshirode@gmail.com",
+                      userEmail!,
                       style: Theme.of(context).textTheme.headline6!.copyWith(
                             color: kBlack.withOpacity(0.6),
                             fontSize: 14,
